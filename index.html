@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title></title>
+  </head>
+  <body>
+    <main class="container">
+      <form
+        onsubmit="event.preventDefault();mobileValidation();"
+        autocomplete="off"
+      >
+        <!-- ******Left Container******* -->
+        <div class="left-container common-container">
+          <h1>General Information</h1>
+
+          <!-- title -->
+          <div class="title align">
+            <label class="left-gap">Title</label>
+            <select
+              name="title"
+              id=""
+              class="border-style width-style"
+            ></select>
+          </div>
+          <!-- title end -->
+
+          <!-- Name  -->
+          <div class="name margin-style-left">
+            <input
+              type="text"
+              placeholder="First Name"
+              class="calc border-style"
+              name="firstName"
+              id="firstname"
+              value=""
+              required
+            />
+            <input
+              type="text"
+              placeholder="Lirst Name"
+              class="calc border-style"
+              name="lastName"
+              id="lastName"
+              value=""
+              required
+            />
+          </div>
+          <!-- Name End -->
+
+          <!-- Position -->
+          <div class="position align margin-style-left">
+            <label for="" class="left-gap">Position</label>
+            <select
+              name="position"
+              id="position"
+              class="border-style width-style"
+            ></select>
+          </div>
+          <!-- Position End -->
+
+          <!-- Company -->
+          <div class="company margin-style-left">
+            <input
+              type="text"
+              placeholder="Company"
+              class="border-style input-style"
+            />
+          </div>
+          <!-- Company end -->
+        </div>
+        <!-- ******Left Container End******* -->
+
+        <!-- ******Right Container********* -->
+        <div class="right-container common-container">
+          <h1>Contact details</h1>
+
+          <div class="street right">
+            <input
+              type="text"
+              placeholder="Street-Nr"
+              class="border-style input-style"
+            />
+          </div>
+
+          <div class="add-info right">
+            <input
+              type="text"
+              placeholder="Additional Information"
+              class="border-style input-style"
+            />
+          </div>
+
+          <div class="contact right margin-style-right">
+            <input type="text" placeholder="Zip Code" class="border-style" />
+            <input
+              type="text"
+              placeholder="Place"
+              class="border-style phone"
+              name="city"
+              id="city"
+              value=""
+              required
+            />
+          </div>
+
+          <div class="country align margin-style-right">
+            <label for="" class="left-gap">Country</label>
+            <select
+              name="position"
+              id="country"
+              name="country"
+              class="border-style width-style"
+            ></select>
+          </div>
+
+          <div class="contact right margin-style-right">
+            <input type="text" placeholder="Code +" class="border-style" />
+            <input
+              type="tel"
+              placeholder="Phone Number"
+              id="phonenumber"
+              class="border-style phone"
+              name="phone"
+              value=""
+              required
+            />
+            <span id="message" class="message"></span>
+          </div>
+
+          <div class="email right margin-style-right">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="border-style input-style"
+              id="email"
+              name="mail"
+              value=""
+              required
+            />
+          </div>
+
+          <!-- Terms  -->
+          <div class="terms margin-style-right">
+            <input type="radio" name="terms" />I accept the
+            <a href="#">Terms and Conditions</a> of your site
+          </div>
+          <!-- Terms End -->
+
+          <!-- Registor -->
+          <div class="buttons">
+            <div class="submit">
+              <input type="submit" value="Register" class="btn" />
+            </div>
+            <div class="show-table">
+              <button class="btn done" id="table-button">Show Table</button>
+            </div>
+          </div>
+          <!-- Registor -->
+        </div>
+        <!-- ******Right Container End********* -->
+      </form>
+    </main>
+
+    <!-- Tabular -->
+    <table>
+      <tr>
+        <td>
+          <table class="list" id="atheleteList">
+            <thead>
+              <tr class="list-style">
+                <th>First Name</th>
+                <th>Email</th>
+                <th>Phone</th>
+                <th>City</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </td>
+      </tr>
+    </table>
+    <!-- Tabular End -->
+
+    <script src="script.js"></script>
+  </body>
+</html>

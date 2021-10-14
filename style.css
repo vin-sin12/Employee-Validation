@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #8cc6ec;
+  /* height: 100vh; */
+  margin: 0;
+}
+
+.container {
+  width: 90vw;
+  height: 100vh;
+  display: flex;
+  position: relative;
+}
+
+.left-container {
+  left: 170px;
+  background: #fff;
+  color: #757373;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.left-container h1 {
+  color: #4a7dc1;
+  letter-spacing: 2px;
+}
+
+/* common styles */
+.common-container {
+  position: absolute;
+  width: 35%;
+  height: 85%;
+  top: 55px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.align {
+  display: flex;
+  flex-direction: column;
+}
+
+.left-gap {
+  padding-left: 13px;
+}
+
+.border-style {
+  border: none;
+  border-bottom: 2px solid #bdb0b0;
+  outline: none;
+  background-color: transparent;
+}
+
+.margin-style-right {
+  margin-top: 15px;
+}
+
+.margin-style-left {
+  margin-top: 20px;
+}
+
+.width-style {
+  width: 100%;
+  cursor: pointer;
+}
+
+input::placeholder {
+  font-size: 1rem;
+}
+
+.input-style {
+  margin: 0 5px;
+  padding: 0 0 20px 10px;
+  width: 96%;
+}
+
+.right input::placeholder {
+  color: #fff;
+}
+/* common styles end */
+
+.name {
+  display: flex;
+}
+
+.calc {
+  width: calc((100% - 0.9rem) / 2);
+}
+
+.name input {
+  margin: 0 5px;
+  padding: 10px;
+}
+
+/* Right Container */
+.right-container {
+  right: 45px;
+  background: #4a34d4;
+  color: #fff;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+.right-container h1 {
+  letter-spacing: 3px;
+}
+
+.add-info {
+  margin-top: 22px;
+}
+
+select {
+  color: rgb(27, 4, 88);
+  text-align: right;
+  font-size: 1rem;
+  padding: 0 10px 10px 0;
+}
+
+.contact input {
+  margin: 0 5px;
+  padding: 0 0 20px 10px;
+}
+
+.message {
+  color: red;
+  text-align: right;
+}
+.phone {
+  width: 277px;
+  /* calculation using calc? */
+}
+
+.register-button {
+  margin-top: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.btn {
+  border-radius: 20px;
+  padding: 15px 30px;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bolder;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+/* Right Container End */
+
+/* Registered Athelet Table */
+body > table {
+  width: 50%;
+  margin-bottom: 10rem;
+}
+
+table {
+  /* border-collapse: collapse; */
+  width: 60rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.list-style {
+  width: 100%;
+  position: relative;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  padding: 8px;
+}
+
+tr:nth-child(even),
+table.list thead > tr {
+  background-color: #dddddd;
+}
+/* Registered Athelet Table End */
